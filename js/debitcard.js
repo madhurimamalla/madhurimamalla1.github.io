@@ -42,10 +42,11 @@ define(function () {
 						
 						<div class="panel-body">
 						  	<form class="form-inline" id="debitForm">
-								<!-- For entering the card holder's details -->
-								<div class="form-group">
-									<label for="cardNumber">CARD NUMBER</label>
+								
+                             <!-- For entering the card holder's details -->
+                                <div class="form-group">
 									<div class="input-group">
+                                        <div class="input-group-addon"><strong>CARD NUMBER</strong></div>    
 										<input type="text" class="form-control" id="cardNumber" pattern="[0-9]{12}" placeholder="Valid Card Number" maxlength="12" minlength=12 required autofocus />
 										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 									</div>
@@ -54,17 +55,17 @@ define(function () {
 								<!-- For entering the M-PIN -->
 								<br>
 								<div class="form-group-sm">
-									<label for="mpin">M-PIN</label>
 									<div class="input-group">
+                                        <div class="input-group-addon"><strong>M-PIN</strong></div>   
 										<input type="password" class="form-control" pattern="[0-9]{4}" id="mpin" placeholder="XXXX" maxlength="4" minlength=4 required autofocus />
 										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 									</div>
 								</div>
 								</br>
-								<!-- The value to be paid will need to be retrieved from previous page -->	
+                                	
 								<div class="form-group">
 									<div class="input-group">
-										<div class="input-group-addon">Rs</div>
+										<div class="input-group-addon"><strong>Rs</strong></div>
 										<input type="text" class="form-control" pattern="[0-9]+" id="inputDebitAmount" placeholder="Amount" maxlength=10 required autofocus>
 										<div class="input-group-addon">.00</div>
 									</div>
