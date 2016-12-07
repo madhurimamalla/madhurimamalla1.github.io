@@ -4,17 +4,17 @@
 
 <p>On loading the module, the Order Details page is displayed which gets all its details from the orderDetails.json. One can add more data to the orderDetails.json and see how the index.html updates. As the data is added and the index.html is refreshed, the total amount of the cart is also recalculated and updated. The next step is "Proceed to Payment" which is triggered by clicking the Payment button and that goes to the Payment Methods page. Presently, there are two ways to make the payment, 'Wallet' or 'Debitcard'. By default the Wallet option is chosen. The order summary details on the right give the total amount payable including the delivery charges and this can be verified one last time before proceeding. If the wallet is chosen, we see a remaining balance updated (this is populated by getting details such as balance from the paymentMethods.json). After which we need to enter required values and complete the payment. If the Debitcard option on the left sidebar is clicked, the debitcard panel shows up. Enter the details such as a 12 digit card number, a 4 digit MPIN, payable amount and complete the payment. A successful transaction will show a success message. And, in other cases, it'll show a failure message.<p> 
 
-<h4>Link to the demo is is: https://madhurimamalla.github.io </h4>
+<h4>Link to the demo is is: https://madhurimamalla.github.io </h4> <br>
 
-### Steps to run this module:
-1. Download and install a tomcat server.
-2. Clone/Pull this project and place it in the webapps folder of the tomcat server.
-3. Start the tomcat server.
-4. This page can be viewed on the 8080 port of your localhost.
 
-#### Supported Browsers
 
 <p> This is tested on Firefox and Chrome. </p>
+
+### Steps to run this module:
+1. Download and install a tomcat server. <br>
+2. Clone/Pull this project and place it in the webapps folder of the tomcat server. <br>
+3. Start the tomcat server. <br>
+4. This page can be viewed on the 8080 port of your localhost. <br>
 
 ### Adding a new payment method
 
