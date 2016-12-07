@@ -1,0 +1,17 @@
+{
+	"paymentMethod":[
+		{
+			"paymentMethod" : "Wallet",
+			"paymentName" : "Wallet",
+			"Balance": "1500"	
+		},
+		{
+			"paymentMethod" : "Debit",
+			"paymentName" : "Debit Card"
+		},
+		{
+			"paymentMethod" : "Credit",
+			"paymentName" : "Credit Card"
+		}
+	]
+}

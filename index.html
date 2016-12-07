@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="Order Summary">
+		<meta name="author" content="Madhurima">
+		<link rel="icon" href="img/cart1.ico">
+		
+		<title>Order summary</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap theme -->
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<link href="myCss/index.css" rel="stylesheet">
+		
+	</head>
+
+	<body>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Payment-Module</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" style="background-color:#FFFFFF";>
+            <img src="img/cart1.png" alt="..." style="height: auto; width: auto; padding: 40px; margin: 0 auto;">
+        </div>
+	  </div>
+    </div>	
+	
+	<div class="container-fluid">
+		 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<h1 class="page-header">Summary of your order</h1>
+			<div class="panel panel-info">	
+				<div class="panel-heading"><a href="#">Cart <span class="badge" id="numberInCart"></span></a></div>
+				    
+                <div class="table-responsive">
+                    <div id="orderDetails">
+                        
+                    </div>
+				</div>
+			</div>
+	   </div>
+	</div>
+	
+	<div class = "container-fluid">
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+				<div>
+					<img src="img/location.png" alt="...">
+				</div>
+				<div class="well"> <strong>The Shipping address</strong> 
+					<br>10/3, Prasiddi, Gangamma temple street, NR colony, Ashoknagar, Bangalore - 560076</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+                    
+				</div>	
+                <div class="col-sm-6 col-md-4">
+                    <div class="row-fluid">
+                     <button type="submit" onclick="location.href='paymentMethods.html';" class="btn btn-lg btn-primary pull-right" id="indexPayButton">Proceed to payment</button>
+                     <div class="well pull-right"><strong>Total order cost: <span id="totalCostOfCart"></span></strong></div>
+                    </div>    
+                </div>    
+                </div>
+				</div>
+         </div>
+		</div>
+	</div>
+	
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mustache.js"></script>
+	
+	<script data-main="js/main.js" src="js/require.js"></script>
+
+	</body>
+</html>

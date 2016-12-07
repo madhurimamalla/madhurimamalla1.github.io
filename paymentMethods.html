@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="Payment Methods">
+		<meta name="author" content="Madhurima">
+		<link rel="icon" href="img/cart1.ico">
+		
+		<title>Payment methods : Order Payment</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap theme -->
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<link href="myCss/paymentMethods.css" rel="stylesheet">
+	</head>
+
+	<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Payment-Module</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+			<div id="nav_container">
+					<ul class="nav nav-sidebar" id="navSideBar">
+						<li><a href="#"><p><strong>Payment Methods</strong></p></a></li>
+						<li class="active"><a href="paymentMethods.html" id="wallet">Wallet <span class="sr-only">(current)</span></a></li>
+						<li><a href="#" id="debitcard">Debit Card</a></li>
+						<li><a href="#" id="creditcard">Credit Card</a></li>
+					</ul>
+			</div>	
+        </div>
+	  </div>
+	</div>	
+	
+	<div class="container-fluid">
+		<div id="container">
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<div class="row">
+					<div class="col-sm-5">
+						<div id="walletClick">
+							
+						</div>
+					</div>	
+				
+					<div class="col-sm-4 pull-right">
+                        <div id="orderSummaryTable">
+						 
+                       </div>        
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+    </div>
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mustache.js"></script>
+	<script data-main="js/paymentMethods.js" src="js/require.js"></script>
+	</body>
+</html>
