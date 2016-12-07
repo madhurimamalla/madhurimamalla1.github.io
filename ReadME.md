@@ -4,10 +4,10 @@
 
 <p>On loading the module, the Order Details page is displayed which gets all its details from the orderDetails.json. One can add more data to the orderDetails.json and see how the index.html updates. As the data is added and the index.html is refreshed, the total amount of the cart is also recalculated and updated. The next step is to "Proceed to Payment" which is triggered by clicking the Payment button and that takes the user to the Payment Methods page. Here, by default the Wallet option is chosen. The user can verify their order summary details one last time and proceed. The Order Summary on this page gives the total payable amount including the delivery charges. If the wallet is chosen, the user can check that there's enough balance in the Wallet (this is populated by getting details such as balance from the paymentMethods.json), enter required values and complete the payment. If the user chooses to pay by Debitcard, click the Debitcard option on the left sidebar and the debitcard panel shows up. Enter the details such as a 12 digit card number, a 4 digit MPIN, payable amount and complete the payment . A successful transaction will show a success message. And, in other cases, it'll show a failure message.<p>
 
-<h3>Steps to run this module:</h3>
-1. The page can be viewed on your 8080 port of localhost OR you can directly access the website above.
+<h4> Steps to run this module:</h4>
+<p>The page can be viewed on your 8080 port of localhost OR you can directly access the website above.</p>
 
-### Supported Broswers
+#### Supported Browsers
 <p> This is tested on Firefox and Chrome. </p>
 
 ### How to add another payment method?
