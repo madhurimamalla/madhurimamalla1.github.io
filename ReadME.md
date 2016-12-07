@@ -12,9 +12,9 @@
 
 ### Steps to run this module
 * Download and install a tomcat server. <br>
-* Clone/Pull this project and place it in the webapps folder of the tomcat server. <br>
+* Clone/Pull the files of this project, place it in a folder say 'payment-module' and then drop it in the webapps folder of the tomcat server. <br>
 * Start the tomcat server. <br>
-* The page will be up at http://127.0.0.1:8080/madhurimamalla.github.io/ <br>
+* The page will be up at http://127.0.0.1:8080/payment-module/index.html <br>
 
 ### Adding a new payment method
 
