@@ -8,7 +8,7 @@
 
 
 
-<p> This is tested on Firefox and Chrome. </p>
+<p> This is tested on Firefox and Chrome. And, in Windows and Mac. </p>
 
 ### Steps to run this module
 * Download and install a tomcat server. <br>

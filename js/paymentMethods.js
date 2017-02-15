@@ -12,6 +12,7 @@ define(['wallet','debitcard','creditcard','order'], function (wallet, debitcard,
         debitcard.debitcardView.bindEventListeners();
     });
    
+    /* This is the credit card module easily plugged in */
     creditcard.init(); 
     $('#creditcard').click(function () { 
         $('#walletClick').html(creditcard.creditcardView.render().el); 
