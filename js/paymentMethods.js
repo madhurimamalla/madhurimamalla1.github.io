@@ -1,4 +1,4 @@
-define(['wallet','debitcard', 'order'], function (wallet, debitcard, order) {
+define(['wallet','debitcard','creditcard','order'], function (wallet, debitcard, creditcard, order) {
    
     /* By default the Wallet option */
     wallet.init();
@@ -12,6 +12,12 @@ define(['wallet','debitcard', 'order'], function (wallet, debitcard, order) {
         debitcard.debitcardView.bindEventListeners();
     });
    
+    creditcard.init(); 
+    $('#creditcard').click(function () { 
+        $('#walletClick').html(creditcard.creditcardView.render().el); 
+        creditcard.creditcardView.bindEventListeners(); 
+    });
+    
     /* Below code populates the Order Summary panel and its values */
     order.init();
     $('#orderSummaryTable').html(order.orderSummaryView.render().el);
